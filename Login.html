@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Online Store</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/Auth.css">
+
+</head>
+
+<body data-page="login">
+   
+    <header>
+
+   
+    <div class="top_header">
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <img src="img/logo.jpg" alt="David Online Shop">
+            </a>
+
+            <form action="" class="search_box">
+
+                <div class="select_box">
+                    <select id="category" name="category">
+                        <option value="All Categories">All Categories</option>
+                        <option value="Electronics & Digita">Electronics & Digital</option>
+                        <option value="Phones & Tablet">Phones & Tablets</option>
+                        <option value="Fashion & Clothings">Fashion & Clothings</option>
+                        <option value="Television & Monitor">Television & Monitor</option>
+                        <option value="Jewelry & Watches">Jewelry & Watches</option>
+                        <option value="Washing Machine">Washing Machine</option>
+                        <option value="Toys & Hobbies">Toys & Hobbies</option>
+                    </select>
+                </div>
+
+                <input type="text" name="search" id="search" placeholder="Search for Products">
+
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </form>
+
+        </div>
+    </div>
+
+
+   
+    <div class="bottom_header">
+
+        <div class="container">
+
+            <nav class="nav">
+
+                <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+
+                <div class="category_nav">
+
+                    <div onclick="Open_Categ_list()" class="category_btn"><i class="fa-solid fa-bars"></i>
+
+                        <p>Browse Category</p><i class="fa-solid fa-angle-down"></i>
+
+                    </div>
+
+
+                    <div class="category_nav_list">
+
+                        <a href="#">Top 10 Offers</a>
+                        <a href="#">Electronics & Digital</a>
+                        <a href="#">Phones & Tablets</a>
+                        <a href="#">Fashion & Clothings</a>
+                        <a href="#">Television & Monitor</a>
+                        <a href="#">Jewelry & Watches</a>
+                        <a href="#">Toys & Hobbies</a>
+
+                    </div>
+
+                </div>
+
+
+                <ul class="nav_links">
+
+                    <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Accessories</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="login_signup btns">
+
+                <a href="SignUp.html" class="btn">Sign Up<i class="fa-solid fa-user-plus"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+        <section class="checkout auth_page">
+        <div class="container">
+            <div class="ordersummary auth_card">
+                <h1>Login</h1>
+ 
+                <p class="form_message" id="formMessage"></p>
+ 
+                <form id="loginForm" novalidate>
+                    <div class="input_group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com">
+                        <span class="error_msg" id="emailError"></span>
+                    </div>
+ 
+                    <div class="input_group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password">
+                        <span class="error_msg" id="passwordError"></span>
+                    </div>
+ 
+                    <div class="button_div">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+<p class="switch_auth">Don't have an account? <a href="SignUp.html">Sign Up</a></p>
+            </div>
+        </div>
+    </section>
+ 
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img class="logo_footer" src="img/footerlogo.jpg" width="200px" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, vero?</p>
+ 
+                <div class="icons_footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+ 
+            <div class="row">
+                <h4>Find It Fast</h4>
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Laptops & Computers </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Smart Phones & Tablets</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> TV & Audio</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Appliances</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Jewelry & Watches</a>
+                </div>
+            </div>
+ 
+            <div class="row">
+                <h4>Quick Links</h4>
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Your Account </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Returns & Exchanges</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Shipping & Delivery</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Estimated Delivery Time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Purchase Hisotry</a>
+                </div>
+            </div>
+ 
+            <div class="row">
+                <h4>Service us</h4>
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Support Center</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Term & Conditions</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Help</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy; <span>David Store.</span> All Rights Reserved.</p>
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+   
+    <script src="JS/auth.js"></script>
+    <script src="JS/Login.js"></script>
+</body>
+</html>
+ 

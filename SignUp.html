@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Online Store</title>
+
+    <link rel="icon" href="img/icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+        
+         <link rel="stylesheet" href="CSS/style.css">
+         <link rel="stylesheet" href="CSS/Auth.css">
+
+</head>
+
+ <body data-page="signup">
+
+            <header>
+                <div class="top_header">
+                    <div class="container">
+                        <a href="index.html" class="logo"> <img src="img/logo.jpg" alt=""></a>
+
+                        <form action="" class="search_box">
+
+                            <div class="select_box">
+                                <select id="category" name="category">
+
+                                    <option value="All Categories">All Categories</option>
+                                    <option value="Electronics & Digita">Electronics & Digita</option>
+                                    <option value="Phones & Tablet">Phones & Tablety</option>
+                                    <option value="Fashion & Clothings">Fashion & Clothings</option>
+                                    <option value="Television & Monitor">Television & Monitor</option>
+                                    <option value="jewelry & watches">jewelry & watches</option>
+                                    <option value="Washing Machine">Washing Machine</option>
+                                    <option value="Toys & Hobbies">Toys & Hobbies</option>
+                                
+                                </select>
+                            </div>
+
+                            <input type="text" name="search" id="search" placeholder="Search for Products" required>
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+
+                                </form>
+
+                    </div>
+            
+                </div>
+                <div class="bottom_header">
+                    <div class="container">
+                        <nav class="nav">
+                        <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+                        <div class="category_nav">
+                            <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Browse Category</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="category_nav_list">
+                              
+                                    <a href="#">Top 10 Offers</a>
+                                    <a href="#">Electronics & Digital</a>
+                                    <a href="#">Phones & Tablets</a>
+                                    <a href="#">Fashion & Clothings</a>
+                                    <a href="#">Television & Monitor</a>
+                                    <a href="#">Jewelry & Watches</a>
+                                    <a href="#">Toys & Hobbies</a>
+                               
+                            </div>
+                        </div>
+
+                        <ul class="nav_links">
+                            <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">Accesories</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="login_signup btns">
+                        <a href="Login.html" class="btn">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                        
+                    </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="checkout auth_page">
+                <div class="container">
+                    <div class="ordersummary auth_card">
+                        <h1>Sign Up</h1>
+
+                        <form id="signupForm" novalidate>
+                            <div class="input_group">
+                                <label for="FullName">Full Name</label>
+                                <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+                                <span class="error_msg" id="nameError"></span>
+                            </div>
+
+                            <div class="input_group">
+                                <label for="Email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                                <span class="error_msg" id="emailError"></span>
+                            </div>
+
+                            <div class="input_group">
+                                <label for="Password">Password</label>
+                                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                                <span class="error_msg" id="passwordError"></span>
+                             <p class="password_hint">Min 8 characters, with an uppercase letter, a lowercase letter and a number.</p>
+
+                            </div>
+
+                            <div class="input_group">
+                                <label for="ConfirmPassword">Confirm Password</label>
+                                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Re-Enter your password" required>
+                                <span class="error_msg" id="confirmError"></span>
+
+                            </div>
+
+                            <div class="input_group">
+                        <label for="phone">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="01012345678">
+                        <span class="error_msg" id="phoneError"></span>
+                        </div>
+
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                            
+                        </div>
+
+                        <p id="formMessage" class="form_message"></p>
+
+                        <div class="button_div">
+                            <button type="submit">Sign Up</button>
+                        </div>
+                    </form>
+
+                    <p class="switch_auth">Already have an account? <a href="Login.html">Login here</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <div class="big_row">
+                        <img class="logo_footer" src="img/footerlogo.jpg" width="100" height="200" alt="">
+
+                        <div class="icons_footer">
+                             
+                            <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                           
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4>Find It Fast</h4>
+                        <div class="links">
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>laptops & computers</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>smartphones & tablets</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Tv & Audio</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Appliances</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Jewelry & watches</a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4>Quick Links</h4>
+                        <div class="links">
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>My Account</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Returns & Exchanges</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Shipping & Delivery</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Estimated Delivery Time</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Purchase History</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4>services</h4>
+                        <div class="links">
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Contact Us</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Terms & Conditions</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Privacy policy</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>Help</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i>FAQS</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="bottom_footer">
+                    <div class="container">
+                        <p>&copy;<span>David Stire.</span> All rights reserved.</p>
+                        <div class="payment_methods">
+                            <img src="img/payment_method.png" alt="">
+
+                            </div>
+                    </div>
+                    </div>
+            </footer>
+                            
+              
+              <script src="JS/auth.js"></script>
+              <script src="JS/signup.js"></script>
+</body>
+</html>

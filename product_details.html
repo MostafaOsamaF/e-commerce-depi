@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - David Online Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ==========================================
+           1. Base Reset & Layout Setup
+        ========================================== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html, body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            overflow-x: hidden !important;
+        }
+
+        /* ==========================================
+           2. Main Container & Dynamic Area
+        ========================================== */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        #product-detail-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+        }
+
+        /* ==========================================
+           3. Dynamic Elements Styling (JS Support)
+        ========================================== */
+        #product-detail-content img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #product-detail-content .product-info,
+        #product-detail-content .details-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        #product-detail-content h1, 
+        #product-detail-content h2 {
+            font-size: 30px;
+            color: #222222;
+            margin-bottom: 15px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        #product-detail-content p {
+            font-size: 16px;
+            color: #555555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        #product-detail-content .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff7d1a;
+            margin-bottom: 20px;
+        }
+
+        #product-detail-content button,
+        #product-detail-content .add-to-cart-btn {
+            background: #ff7d1a;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s ease;
+        }
+
+        #product-detail-content button:hover {
+            background: #e06910;
+        }
+
+        /* ==========================================
+           4. Responsive Design (Media Queries)
+        ========================================== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            #product-detail-content {
+                flex-direction: column !important;
+                gap: 20px !important;
+                padding: 20px 15px !important;
+                align-items: stretch !important;
+            }
+
+            #product-detail-content img {
+                max-width: 100% !important;
+            }
+
+            #product-detail-content h1, 
+            #product-detail-content h2 {
+                font-size: 24px;
+            }
+
+            #product-detail-content p {
+                font-size: 15px;
+            }
+
+            #product-detail-content .price {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html, body {
+                width: 100% !important;
+                overflow-x: hidden !important;
+            }
+
+            .container {
+                padding: 15px 10px;
+            }
+
+            #product-detail-content {
+                padding: 15px 10px !important;
+                gap: 15px !important;
+            }
+
+            #product-detail-content h1, 
+            #product-detail-content h2 {
+                font-size: 20px;
+            }
+
+            #product-detail-content p {
+                font-size: 14px;
+            }
+
+            #product-detail-content button,
+            #product-detail-content .add-to-cart-btn {
+                padding: 13px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <!-- Container لعرض تفاصيل المنتج ديناميكياً عن طريق JavaScript -->
+        <div id="product-detail-content"></div>
+    </main>
+
+    <!-- استدعاء ملف الجافاسكريبت الخاص بـ Product Details -->
+    <script src="JS/product_details.js"></script>
+</body>
+</html>

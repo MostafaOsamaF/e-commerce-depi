@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Ahmed Mohamed",
+    "email": "test@example.com",
+    "phone": "01012345678",
+    "passwordHash": "008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601"
+  },
+  {
+    "id": 2,
+    "name": "Sara Ali",
+    "email": "user@example.com",
+    "phone": "01123456789",
+    "passwordHash": "008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601"
+  }
+]
